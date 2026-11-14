@@ -1,11 +1,4 @@
-#Employee managemnet portal -Application entry point
-#Flask application structure will be added here
-from flask import Flask
-app=Flask(__name__)
-@app.route("/")
-def home():
-return"Employee Managemnet Prtal"
-
-if __name__=="__main__":
-app.run(debug=True)
+@app.route("/register",methods=["POST"]
+def register_employee():
+return"Employee registered",201
 
